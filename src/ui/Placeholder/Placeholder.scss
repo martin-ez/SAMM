@@ -1,0 +1,10 @@
+@import 'src/scss/mixins', 'src/scss/colors';
+
+#Placeholder
+{
+  color: $clr-placeholder;
+  font-family: sans-serif;
+  font-size: 10rem;
+  @include full-screen;
+  @include flex-center-content;
+}

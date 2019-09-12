@@ -1,0 +1,12 @@
+@mixin flex-center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin full-screen ($overflowX: hidden, $overflowY: hidden) {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: $overflowX;
+  overflow-y: $overflowY;
+}
