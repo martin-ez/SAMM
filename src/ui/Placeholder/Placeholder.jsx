@@ -1,10 +1,10 @@
 import React from 'react';
 import './Placeholder.scss';
 
-function Placeholder() {
+function Placeholder(props) {
   return (
     <section id="Placeholder">
-      SAMM
+      {props.text}
     </section>
   );
 }

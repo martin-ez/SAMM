@@ -1,0 +1,13 @@
+@import 'src/scss/mixins', 'src/scss/colors';
+
+.Home
+{
+  @include full-screen;
+  @include flex-center-content;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &__Title {
+    font-size: 12rem;
+  }
+}

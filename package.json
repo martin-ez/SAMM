@@ -5,9 +5,13 @@
   "dependencies": {
     "firebase": "^6.6.1",
     "node-sass": "^4.12.0",
+    "octavian": "^2.2.0",
+    "pizzicato": "^0.6.4",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-router-dom": "^5.1.1",
+    "react-scripts": "3.1.1",
+    "soundfont-player": "^0.11.0"
   },
   "scripts": {
     "start": "react-scripts start",

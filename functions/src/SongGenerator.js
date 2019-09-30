@@ -8,24 +8,26 @@ function convertProgression(progression, key, minor) {
     let note = new Note(rootStr);
     const chord = Math.abs(progression[bar]);
     switch(chord) {
-      case 2:
-        note = note.majorSecond();
-        break;
-      case 3:
-        note = !minor ? note.majorThird() : note.minorThird();
-        break;
-      case 4:
-        note = note.perfectFourth();
-        break;
-      case 5:
-        note = note.perfectFifth();
-        break;
-      case 6:
-        note = !minor ? note.majorSixth() : note.minorSixth();
-        break;
-      case 7:
-        note = !minor ? note.majorSeventh() : note.minorSeventh();
-        break;
+    case 2:
+      note = note.majorSecond();
+      break;
+    case 3:
+      note = !minor ? note.majorThird() : note.minorThird();
+      break;
+    case 4:
+      note = note.perfectFourth();
+      break;
+    case 5:
+      note = note.perfectFifth();
+      break;
+    case 6:
+      note = !minor ? note.majorSixth() : note.minorSixth();
+      break;
+    case 7:
+      note = !minor ? note.majorSeventh() : note.minorSeventh();
+      break;
+    default:
+      break
     }
     return `${note.letter}${note.modifier?'#':''}${c<0?'m':''}`;
   });
@@ -63,10 +65,10 @@ function createSession() {
     drums: {
       player: '',
       pattern: [
-        '-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-',
-        '-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-',
-        '-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,',
-        '-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,'
+        '----------------',
+        '----------------',
+        '----------------',
+        '----------------'
       ]
     },
     bass: {

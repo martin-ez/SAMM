@@ -1,13 +1,22 @@
 import React from 'react';
-import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import './scss/_reset.scss';
 
-import Placeholder from './ui/Placeholder/Placeholder';
+import Home from './views/Home/Home';
+import Session from './views/Session/Session';
 
 function App() {
   return (
-    <div className="App">
-      <Placeholder/>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/session">
+          <Session />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

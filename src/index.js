@@ -2,11 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import * as firebase from "firebase/app";
-import FirebaseConfig from './private/firebaseConfig.js';
-
-// Initialize firebase SDK
-firebase.initializeApp(FirebaseConfig);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
